@@ -41,4 +41,25 @@ public class CounterTest {
         int result = Counter.sum(5, 9);
         assertThat(result, is(35));
     }
+
+    @Test
+    public void whenSumEvenNumbersFrom1To10Then30() {
+        int rsl = Counter.sumByEven(1, 10);
+        int expected = 30;
+        assertThat(rsl, is(expected));
+    }
+
+    @Test
+    public void whenSumEvenNumbersFrom3To8Then30() {
+        int rsl = Counter.sumByEven(3, 8);
+        int expected = 18;
+        assertThat(rsl, is(expected));
+    }
+
+    @Test
+    public void whenSumEvenNumbersFrom6To12Then30() {
+        int rsl = Counter.sumByEven(6, 12);
+        int expected = 36;
+        assertThat(rsl, is(expected));
+    }
 }
