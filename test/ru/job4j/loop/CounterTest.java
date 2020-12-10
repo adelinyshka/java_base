@@ -42,6 +42,3 @@ public class CounterTest {
         assertThat(result, is(35));
     }
 }
-
-//        System.out.println(sum(4, 11));
-//                35
