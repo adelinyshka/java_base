@@ -23,4 +23,25 @@ public class CounterTest {
         int result = Counter.sum(1, 1);
         assertThat(result, is(1));
     }
+
+    @Test
+    public void when4And11Then60() {
+        int result = Counter.sum(4, 11);
+        assertThat(result, is(60));
+    }
+
+    @Test
+    public void when2And7Then27() {
+        int result = Counter.sum(2, 7);
+        assertThat(result, is(27));
+    }
+
+    @Test
+    public void when5And9Then35() {
+        int result = Counter.sum(5, 9);
+        assertThat(result, is(35));
+    }
 }
+
+//        System.out.println(sum(4, 11));
+//                35
