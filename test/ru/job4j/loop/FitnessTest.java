@@ -39,4 +39,11 @@ public class FitnessTest {
         assertThat(month, is(4));
         System.out.println(month);
     }
+
+    @Test
+    public void whenIvanEqualNik1() {
+        int month = Fitness.calc(90, 90);
+        assertThat(month, is(1));
+        System.out.println(month);
+    }
 }
