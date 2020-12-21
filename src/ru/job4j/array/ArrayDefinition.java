@@ -10,7 +10,6 @@ public class ArrayDefinition {
         names[1] = "Kate";
         names[2] = "Leo";
         names[3] = "John";
-
         System.out.println("Размер массива ages равен:" + ages.length);
         System.out.println("Размер массива surnames равен:" + surnames.length);
         System.out.println("Размер массива prices равен:" + prices.length);
