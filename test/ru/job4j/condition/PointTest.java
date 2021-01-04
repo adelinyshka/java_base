@@ -26,16 +26,6 @@ public class PointTest {
     }
 
     @Test
-    public void when14And33to50Then34() {
-        double expected = 34.20;
-        Point a = new Point(14, 33);
-        Point b = new Point(5, 0);
-        double out = a.distance(b);
-        System.out.println("when14And33to50Then34 is " + out + ". Expected: " + expected);
-        Assert.assertEquals(expected, out, 0.01);
-    }
-
-    @Test
     public void when17And3to1And90Then88() {
         double expected = 88.45;
         Point a = new Point(17, 3);
@@ -52,6 +42,16 @@ public class PointTest {
         Point b = new Point(6, 34);
         double out = a.distance(b);
         System.out.println("when44And12to6And34Then43 is " + out + ". Expected: " + expected);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
+    @Test
+    public void when14And33and0to580Then26() {
+        double expected = 26.57;
+        Point a = new Point(14, 33, 0);
+        Point b = new Point(5, 8, 0);
+        double out = a.distance(b);
+        System.out.println("when14And33and0to580Then26 is " + out + ". Expected: " + expected);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
