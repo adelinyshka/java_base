@@ -29,4 +29,18 @@ public class MaxTest {
         int result = Max.max(8, 8);
         assertThat(result, is(8));
     }
+
+    @Test
+    public void whenMax957Then9() {
+        int result = Max.maxFor3(9, 5, 7);
+        System.out.println(result);
+        assertThat(result, is(9));
+    }
+
+    @Test
+    public void whenMax1234Then8() {
+        int result = Max.maxFor4(1, 2, 3, 4);
+        System.out.println(result);
+        assertThat(result, is(4));
+    }
 }
