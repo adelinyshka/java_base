@@ -14,7 +14,7 @@ public final class Product {
     }
 
     public int discount() {
-        return 0;
+        return 10;
     }
 
     public String label() {

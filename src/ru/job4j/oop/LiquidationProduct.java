@@ -10,7 +10,7 @@ public final class LiquidationProduct {
     }
 
     public LiquidationProduct(String name, int price) {
-        product = new Product(name, price);
+        product = new LiquidationProduct(name, price).getProduct();
     }
 
     public String label() {
